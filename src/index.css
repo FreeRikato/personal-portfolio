@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #1c1c1e;
+    --bg-card: #252528;
+    --bg-hover: #2e2e32;
+    --text: #e8e8e8;
+    --text-muted: #e8e8e8;
+    --text-subtle: #555;
+    --accent-teal: #5ce6b5;
+    --accent-pink: #f778ba;
+    --accent-yellow: #f5c518;
+    --border: rgba(255, 255, 255, 0.07);
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  [data-theme="light"] {
+    --bg: #f5f5f5;
+    --bg-card: #ffffff;
+    --bg-hover: #ebebeb;
+    --text: #1a1a1a;
+    --text-muted: var(--text);
+    --text-subtle: #d0d0d0;
+    --border: rgba(0, 0, 0, 0.09);
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: cursor-blink 1s infinite;
+  display: inline-block;
+}
+
+@keyframes line-appear {
+  from { opacity: 0; transform: translateY(3px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.terminal-line-enter {
+  animation: line-appear 0.2s ease forwards;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--bg-hover); border-radius: 3px; }

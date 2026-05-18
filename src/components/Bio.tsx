@@ -1,7 +1,7 @@
 import SectionBlock from './SectionBlock'
 
 const TIMELINE = [
-  { year: '2019', event: 'Faced a "Java Wall"—was so intimidated by the language that I skipped the exam. It was the wake-up call I needed.' },
+  { year: '2019', event: 'Faced a "Java Wall" was so intimidated by the language that I skipped the exam. It was the wake-up call I needed.' },
   { year: '2020', event: 'The Comeback. Spent the year grinding Java and finished with a 99% score. Enrolled in M.Sc Data Science at TCE.' },
   { year: '2022', event: 'Pivoted into the world of Python and Data Science.' },
   { year: '2023', event: 'Research Internship at IISc Bangalore, working at the intersection of high-level theory and practice.' },

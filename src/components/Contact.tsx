@@ -8,7 +8,7 @@ const SOCIAL = [
   },
   {
     label: 'Aravinthan R (LinkedIn)',
-    href: 'https://linkedin.com/in/aravinthan-r',
+    href: 'https://www.linkedin.com/in/aravinthan-r-97934b31b/',
     icon: 'linkedin',
   },
   {

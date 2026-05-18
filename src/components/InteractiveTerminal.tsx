@@ -268,7 +268,7 @@ function SocialsOutput() {
       </div>
       <div style={{ display: 'flex' }}>
         <span style={{ color: WHITE, opacity: 0.6, minWidth: '12ch' }}>LinkedIn</span>
-        <span style={{ color: TEAL }}>linkedin.com/in/aravinthan-r</span>
+        <span style={{ color: TEAL }}>linkedin.com/in/aravinthan-r-97934b31b</span>
       </div>
       <div style={{ display: 'flex' }}>
         <span style={{ color: WHITE, opacity: 0.6, minWidth: '12ch' }}>Email</span>

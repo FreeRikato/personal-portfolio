@@ -62,7 +62,10 @@ export default function Navbar({ theme, onToggle }: NavbarProps) {
       <button
         onClick={onToggle}
         className="w-9 h-9 rounded-lg flex items-center justify-center transition-transform duration-200 hover:scale-105 cursor-pointer border-0 shrink-0"
-        style={{ backgroundColor: 'var(--accent-yellow)', color: '#1a1a1a' }}
+        style={{
+          backgroundColor: theme === 'dark' ? '#2e3f5c' : 'var(--accent-yellow)',
+          color: theme === 'dark' ? '#93b4d8' : '#1a1a1a',
+        }}
         aria-label="Toggle theme"
       >
         {theme === 'dark'
